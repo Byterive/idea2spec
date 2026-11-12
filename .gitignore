@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+node_modules/
+.claude/settings.local.json
+.claude/settings.json.bak
+reports/
+research_notes/
+.env
+.env.*
+*.pem
+*.key
+secrets/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/settings.local.json.bak
+# secrets
+# editors and OS
+# Claude local state
+# caches
+
+# local run results and reasoning (never committed)
+docs-local/
