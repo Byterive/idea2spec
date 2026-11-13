@@ -1,8 +1,10 @@
+![idea2spec: find out if an idea is worth building, before you build it](assets/readme-banner.png)
+
 # idea2spec
 
 Find out if an idea is worth building, before you build it.
 
-Version 0.1.0 · early · MIT · Works with Claude Code
+Version 0.1.1 · early · MIT · Works with Claude Code
 
 ## What it does
 
@@ -11,6 +13,8 @@ We built idea2spec for the moment before the first line of code. You describe a 
 A KILL is a good outcome. It means you did not spend weeks on something the evidence did not support.
 
 ## How a run goes
+
+![How Idea2Spec works: questions, research, red team, verdict, spec](assets/workflow.png)
 
 1. **Questions.** It restates the idea and asks a few questions, scaled to how much is at stake. The first one is about privacy: it can search with generalized terms only (the default), with your exact wording, or not search the web at all.
 2. **Research.** It looks for the nearest alternatives, how they earn money, demand signals and failure stories. Every fact is labelled READ (it opened the source), RECALLED (from memory) or UNVERIFIED. Only READ facts can lift a score.
@@ -26,6 +30,17 @@ A KILL is a good outcome. It means you did not spend weeks on something the evid
 ```
 
 Then run `/idea2spec:run` and describe your idea.
+
+## Try it
+
+1. `/idea2spec:run` and then describe your idea
+   It runs the full workflow one gate at a time. It shows the folder path and waits for your yes before the first file is written.
+2. `/idea2spec:interview`
+   It runs only the questions.
+3. `/idea2spec:research`
+   It runs only the web research and writes the evidence ledger.
+
+![Example 01-decision.md: seven dimensions scored 0 to 2 with their evidence levels, a total of 8 of 14, the verdict CLARIFY, and the cheapest test](assets/decision.png)
 
 ## Commands
 
@@ -61,12 +76,16 @@ It shows you the folder path and waits for your yes before the first file is wri
 
 ## Where it stands
 
-This is version 0.1.0 and still early. We have run it end to end twice on one test idea (a bookmark manager): lite mode scored 5 of 14 and full mode 4 of 14, both KILL. The three agents (researcher, red team, reviewer) are new and have not run end to end yet; that first run used general agents with the same briefs. The 10-of-14 GO threshold is a starting guess and has not been back-tested. In claude.ai chat and Cowork the plugin runs in lite mode, where one conversation does every step and a GO shows as "GO (unaudited)"; that mode is not yet tested.
+This is version 0.1.1 and still early. The 10-of-14 GO threshold is a starting guess. In claude.ai chat and Cowork the plugin runs in lite mode, where one conversation does every step and a GO shows as "GO (unaudited)".
 
 Research uses public pages and APIs, such as Hacker News, GitHub, the App Store search, Steam, npm and Wikipedia. They can change or block requests, and the plugin labels anything it could not read as UNVERIFIED.
+
+Privacy: see [PRIVACY.md](PRIVACY.md).
 
 ## Licence
 
 License: MIT. Copyright (c) 2026 Junaid Iqbal (Byterive).
+
+Hacker News, GitHub, App Store, Steam, npm and Wikipedia are trademarks of their owners; this project is not affiliated with them.
 
 *Independent project by Byterive. Not affiliated with or endorsed by Anthropic.* · [byterive.com](https://byterive.com)

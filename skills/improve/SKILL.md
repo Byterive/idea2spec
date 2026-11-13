@@ -1,6 +1,6 @@
 ---
 name: improve
-description: After a KILL or CLARIFY, turn the evidence into a few testable ways to improve the idea: a narrower audience, a wedge found from rival complaints, a pivot, a price hypothesis, a positioning draft, an adjacent idea, and a better cheapest test. Every suggestion cites the evidence ledger or is marked as an assumption. Use when the user asks how to fix, narrow, pivot or retry an idea that did not pass the gate.
+description: "After a KILL or CLARIFY, turn the evidence into a few testable ways to improve the idea: a narrower audience, a wedge found from rival complaints, a pivot, a price hypothesis, a positioning draft, an adjacent idea, and a better cheapest test. Every suggestion cites the evidence ledger or is marked as an assumption. Use when the user asks how to fix, narrow, pivot or retry an idea that did not pass the gate."
 ---
 
 # idea2spec: improve
