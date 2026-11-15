@@ -4,7 +4,7 @@
 
 Find out if an idea is worth building, before you build it.
 
-Version 0.1.1 · early · MIT · Works with Claude Code
+Version 0.1.2 · early · MIT · Works with Claude Code
 
 ## What it does
 
@@ -76,7 +76,7 @@ It shows you the folder path and waits for your yes before the first file is wri
 
 ## Where it stands
 
-This is version 0.1.1 and still early. The 10-of-14 GO threshold is a starting guess. In claude.ai chat and Cowork the plugin runs in lite mode, where one conversation does every step and a GO shows as "GO (unaudited)".
+This is version 0.1.2 and still early. The 10-of-14 GO threshold is a starting guess. In claude.ai chat and Cowork the plugin runs in lite mode, where one conversation does every step and a GO shows as "GO (unaudited)".
 
 Research uses public pages and APIs, such as Hacker News, GitHub, the App Store search, Steam, npm and Wikipedia. They can change or block requests, and the plugin labels anything it could not read as UNVERIFIED.
 
