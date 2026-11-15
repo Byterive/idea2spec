@@ -1,13 +1,14 @@
 {
   "name": "idea2spec",
   "displayName": "Idea2Spec",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Interviews you about a rough idea, researches the nearest alternatives, scores it with a go / clarify / kill gate, and writes a spec only if the idea is worth testing.",
   "author": {
     "name": "Junaid Iqbal",
     "url": "https://byterive.com"
   },
   "homepage": "https://byterive.com",
+  "privacyPolicyUrl": "https://github.com/Byterive/idea2spec/blob/main/PRIVACY.md",
   "repository": "https://github.com/Byterive/idea2spec",
   "license": "MIT",
   "keywords": [
